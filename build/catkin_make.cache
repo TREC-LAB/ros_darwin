@@ -1,0 +1,2 @@
+darwin_control:darwin_description:darwin_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/qkx515/ros_darwin/devel -DCMAKE_INSTALL_PREFIX=/home/qkx515/ros_darwin/install -G Unix Makefiles

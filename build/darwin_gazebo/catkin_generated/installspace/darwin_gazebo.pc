@@ -1,0 +1,8 @@
+prefix=/home/qkx515/ros_darwin/install
+
+Name: darwin_gazebo
+Description: Description of darwin_gazebo
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/qkx515/ros_darwin/install/lib 
+Requires: sensor_msgs gazebo_ros hector_gazebo_plugins
