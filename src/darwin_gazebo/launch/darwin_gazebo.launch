@@ -1,0 +1,29 @@
+<launch>
+  <param name="robot_description" textfile="$(find darwin_description)/urdf/mydarwin.urdf" />
+
+  <!--  This file execute a default launch file provided by Gazebo
+        tell it to load world file and show the Gazebo client	-->
+  <include
+		file="$(find gazebo_ros)/launch/empty_world.launch"
+	>
+    <!--<arg name="paused" value="true"/>-->
+  </include>
+
+  <node
+		pkg="gazebo_ros"
+		type="spawn_model"
+		name="spawn_urdf"
+		args="-file $(find darwin_description)/urdf/mydarwin.urdf -urdf -model darwin -z 0.3417"
+	/>
+
+  <include
+		file="$(find darwin_control)/launch/darwin_control.launch"
+	/>
+ 
+  <node
+		pkg="darwin_gazebo"
+		type="walker.py"
+    name="darwin_walker"
+	/>
+
+</launch>
