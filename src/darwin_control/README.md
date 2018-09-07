@@ -4,9 +4,9 @@
 
 ├── CMakeLists.txt -> /opt/ros/melodic/share/catkin/cmake/toplevel.cmake  
 └── darwin_control  
-    ├── CMakeLists.txt  *// no use at all. But don't delete it, because it is created when using catkin_create_pkg.*
+    ├── CMakeLists.txt  // no use at all. But don't delete it, because it is created when using catkin_create_pkg.
     ├── config  
-    │   └── darwin_control.yaml  
+    │   └── darwin_control.yaml  // defines what controllers we are using, and which joints they are controlling.
     ├── launch  
     │   └── darwin_control.launch  
     └── package.xml  
