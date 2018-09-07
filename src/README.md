@@ -4,11 +4,11 @@
 
 **mybot_control** :*configures the ROS interface to our robot’s joints *
 ---
-├── CMakeLists.txt -> /opt/ros/melodic/share/catkin/cmake/toplevel.cmake
-├── darwin_control
-│   ├── CMakeLists.txt
-│   ├── config
-│   │   └── darwin_control.yaml
+├── CMakeLists.txt -> /opt/ros/melodic/share/catkin/cmake/toplevel.cmake  
+├── darwin_control  
+│   ├── CMakeLists.txt  
+│   ├── config  
+│   │   └── darwin_control.yaml  
 │   ├── launch
 │   │   └── darwin_control.launch
 │   └── package.xml
