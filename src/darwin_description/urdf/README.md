@@ -34,5 +34,14 @@ I want the urdf have tree structure but I need to use their tags. Therefore, we 
 ```
 From this structure, you can understand the whole urdf structure easily. And that's where [XML Copy Editor](http://xml-copy-editor.sourceforge.net/) shows up!
 
+[How XML works with this structure](https://github.com/qkx515/FOR-README/blob/master/image.png)
+
+Here is how to install it in Ubuntu
+
+```
+sudo apt-get install libcanberra-gtk*
+sudo apt-get install xmlcopyeditor
+```
+
 
 
