@@ -32,7 +32,7 @@ I want the urdf have tree structure but I need to use their tags. Therefore, we 
 | <link name = "child">
 | </link>
 ```
-From this structure, you can understand the whole urdf structure easily. And that's where [link](http://xml-copy-editor.sourceforge.net/) XML copy editor shows up!
+From this structure, you can understand the whole urdf structure easily. And that's where [XML Copy Editor](http://xml-copy-editor.sourceforge.net/) shows up!
 
 
 
