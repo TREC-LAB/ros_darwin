@@ -6,6 +6,19 @@ from threading import Thread
 from darwin_gazebo.darwin import Darwin
 from geometry_msgs.msg import Twist
 
+if __name__=="__main__":
+    rospy.init_node("walker")
+    rospy.sleep(1)
+
+    rospy.loginfo("Instantiating Darwin Client")
+    darwin=Darwin()
+    rospy.loginfo("Instantiating Darwin Walker")
+    walker=Walker(darwin)
+
+    rospy.loginfo("Darwin Walker Ready")
+    while not rospy.is_shutdown():
+        rospy.sleep(1)
+
 class WJFunc:
     """
     Walk Joint Function CPG style
@@ -344,15 +357,3 @@ def get_distance(anglesa,anglesb):
     d/=len(joints)
     return d
 
-if __name__=="__main__":
-    rospy.init_node("walker")
-    rospy.sleep(1)
-
-    rospy.loginfo("Instantiating Darwin Client")
-    darwin=Darwin()
-    rospy.loginfo("Instantiating Darwin Walker")
-    walker=Walker(darwin)
-
-    rospy.loginfo("Darwin Walker Ready")
-    while not rospy.is_shutdown():
-        rospy.sleep(1)

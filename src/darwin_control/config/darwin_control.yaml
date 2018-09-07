@@ -39,16 +39,6 @@ darwin:
     joint: j_low_arm_l
     pid: {p: 100.0, i: 0.01, d: 10.0}
 
-  j_wrist_l_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: j_wrist_l
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-
-  j_gripper_l_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: j_gripper_l
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-
   j_shoulder_r_position_controller:
     type: effort_controllers/JointPositionController
     joint: j_shoulder_r
@@ -64,16 +54,7 @@ darwin:
     joint: j_low_arm_r
     pid: {p: 100.0, i: 0.01, d: 10.0}
 
-  j_wrist_r_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: j_wrist_r
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-
-  j_gripper_r_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: j_gripper_r
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-Z
+  ########
   # LEGS #
   ########
 
