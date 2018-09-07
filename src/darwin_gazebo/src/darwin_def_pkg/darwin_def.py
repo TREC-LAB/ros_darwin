@@ -1,12 +1,11 @@
 import random
-from threading import Thread
 import math
 import rospy
 import time
+from threading import Thread
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Twist
-
 
 class Darwin:
     """
@@ -75,8 +74,6 @@ class Darwin:
             angles=interpolate(stop_angles,start_angles,ratio)                        
             self.set_angles(angles)
             r.sleep()
-
-               
 
 def interpolate(anglesa,anglesb,coefa):
     z={}

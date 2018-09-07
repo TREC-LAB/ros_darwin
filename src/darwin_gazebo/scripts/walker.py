@@ -3,21 +3,8 @@
 import rospy
 import math
 from threading import Thread
-from darwin_gazebo.darwin import Darwin
+from darwin_def_pkg.darwin_def import Darwin
 from geometry_msgs.msg import Twist
-
-if __name__=="__main__":
-    rospy.init_node("walker")
-    rospy.sleep(1)
-
-    rospy.loginfo("Instantiating Darwin Client")
-    darwin=Darwin()
-    rospy.loginfo("Instantiating Darwin Walker")
-    walker=Walker(darwin)
-
-    rospy.loginfo("Darwin Walker Ready")
-    while not rospy.is_shutdown():
-        rospy.sleep(1)
 
 class WJFunc:
     """
@@ -357,3 +344,19 @@ def get_distance(anglesa,anglesb):
     d/=len(joints)
     return d
 
+#########
+# main  #
+#########
+
+if __name__=="__main__":
+    rospy.init_node("walker")
+    rospy.sleep(1)
+
+    rospy.loginfo("Instantiating Darwin Client")
+    darwin=Darwin()
+    rospy.loginfo("Instantiating Darwin Walker")
+    walker=Walker(darwin)
+
+    rospy.loginfo("Darwin Walker Ready")
+    while not rospy.is_shutdown():
+        rospy.sleep(1)

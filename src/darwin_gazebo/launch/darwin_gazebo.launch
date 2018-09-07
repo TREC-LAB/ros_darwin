@@ -20,12 +20,10 @@
 		file="$(find darwin_control)/launch/darwin_control.launch"
 	/>
  
-<!--
   <node
 		pkg="darwin_gazebo"
 		type="walker.py"
     name="darwin_walker"
 	/>
--->
 
 </launch>

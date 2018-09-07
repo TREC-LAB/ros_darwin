@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from darwin_gazebo.darwin import Darwin
+from darwin_def_pkg.darwin_def import Darwin
 
 if __name__=="__main__":
     rospy.init_node("walker_demo")

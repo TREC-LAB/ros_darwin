@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(Boost REQUIRED COMPONENTS system)
 find_package(gazebo REQUIRED)
 
+# In order for setup.py to be used by catkin, uncomment this line
 catkin_python_setup()
 
 catkin_package(
